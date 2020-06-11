@@ -18,6 +18,7 @@ class Datasiswa extends CI_Controller {
 
     public function kosong() {
         $this->db->query('delete from siswa');
+        $this->db->query('delete from password_walikelas');
         echo $this->session->set_flashdata('msg','success-hapus');
         redirect('datasiswa');
     }
