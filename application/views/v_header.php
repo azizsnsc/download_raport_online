@@ -44,7 +44,7 @@ $set = $this->db->get_where('sekolah', ['id'=>1])->row_array();
                   <a href="<?php echo base_url().'bagianadmin/logout'?>" class="btn btn-default btn-flat">Sign out</a>
                 </div>
                 <div class="pull-left">
-                  <a data-toggle="modal" data-target="#ModalUbah" class="btn btn-default btn-flat">Ubah Password</a>
+                  <a data-toggle="modal" data-target="#ModalUbah" class="btn btn-default btn-flat">Ubah User Login</a>
                 </div>
               </li>
             </ul>

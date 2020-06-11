@@ -46,9 +46,9 @@ class Datauser extends CI_Controller {
         if (empty($pos)) {
             redirect('bagianadmin');
         }
-        $a = $this->db->update('user', ['password'=>md5($pos['password'])], ['id'=>$this->session->userdata('id')]);
+        $a = $this->db->update('user', ['username'=>$pos['username'], 'password'=>md5($pos['password'])], ['id'=>$this->session->userdata('id')]);
         echo $this->session->set_flashdata('msg','info');
-        redirect('datauser');
+        redirect('password');
     }
 
     public function hapus()

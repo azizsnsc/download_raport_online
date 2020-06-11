@@ -12,11 +12,11 @@ $set = $this->db->get_where('sekolah', ['id'=>1])->row_array();
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-  <meta property="og:site_name" content="PENILAIAN AKHIR SEMESTER SMK NEGERI 1 BANGSRI" /> <!-- website name -->
-  <meta property="og:site" content="uas.smkn1bangsri.sch.id" /> <!-- website link -->
-  <meta property="og:title" content="PENILAIAN AKHIR SEMESTER SMK NEGERI 1 BANGSRI"/> <!-- title shown in the actual shared post -->
-  <meta property="og:description" content="PENILAIAN AKHIR SEMESTER SMK NEGERI 1 BANGSRI" /> <!-- description shown in the actual shared post -->
-  <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:site_name" content="Aplikasi Pembagian Raport On-Line <?php echo $set['NamaSekolah']; ?>" /> <!-- website name -->
+  <meta property="og:site" content="raport.smkn1bangsri.sch.id" /> <!-- website link -->
+  <meta property="og:title" content="Aplikasi Pembagian Raport On-Line <?php echo $set['NamaSekolah']; ?>"/> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="Aplikasi Pembagian Raport On-Line <?php echo $set['NamaSekolah']; ?>" /> <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="<?php echo base_url().'assets/images/'.$set['LogoSekolah'];?>" /> <!-- image link, make sure it's jpg -->
   <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
   <meta property="og:type" content="article" />
 

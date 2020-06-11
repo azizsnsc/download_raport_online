@@ -15,7 +15,7 @@ $set = $this->db->get_where('sekolah', ['id'=>1])->row_array();
   <meta property="og:site" content="" /> <!-- website link -->
   <meta property="og:title" content="DOWNLOAD RAPORT SISWA <?php echo $set['NamaSekolah']; ?>"/> <!-- title shown in the actual shared post -->
   <meta property="og:description" content="DOWNLOAD RAPORT SISWA <?php echo $set['NamaSekolah']; ?>" /> <!-- description shown in the actual shared post -->
-  <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:image" content="<?php echo base_url().'assets/images/'.$set['LogoSekolah'];?>" /> <!-- image link, make sure it's jpg -->
   <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
   <meta property="og:type" content="article" />
 
